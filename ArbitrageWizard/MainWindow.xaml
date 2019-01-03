@@ -113,7 +113,7 @@
                             <CheckBox Name="isBonusBet2" IsChecked="True">Is Bonus Bet?</CheckBox>
                         </StackPanel>
                         <Label Grid.Column="3" Grid.Row="1"  Content="_Weighting:" Padding="10" FontWeight="Bold" FontSize="15"/>
-                        <TextBox Grid.Column="4" Grid.Row="1" Name="weighting1" PreviewTextInput="weighting1_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" TextWrapping="Wrap" Margin="5"  TextAlignment="Center"  MaxLength="5" FontSize="20" Width="90" HorizontalAlignment="Left" VerticalContentAlignment="Center"/>
+                        <TextBox Grid.Column="4" Grid.Row="1" Name="weighting1" KeyUp="weighting1_KeyUp" PreviewTextInput="weighting1_PreviewTextInput" PreviewKeyDown="TextBox_PreviewKeyDown" TextWrapping="Wrap" Margin="5"  TextAlignment="Center"  MaxLength="5" FontSize="20" Width="90" HorizontalAlignment="Left" VerticalContentAlignment="Center"/>
                     </Grid>
                     <Grid DockPanel.Dock="Top" Background="#FFFFD5D0">
                         <Grid.ColumnDefinitions>

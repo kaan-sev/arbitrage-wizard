@@ -108,6 +108,22 @@ namespace ArbitrageWizard
             weightingDoubleChecker(weighting1, e);
         }
 
+        private void weighting1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if ((e.Key == Key.Back) || (e.Key == Key.Delete))
+            {
+                double testVal;
+                if (!Double.TryParse(weighting1.Text, out testVal))
+                {
+                    e.Handled = true;
+                }
+                else
+                {
+                    weighting2.Text = (1 - testVal).ToString();
+                }
+            }
+        }
+
         private void Calculate_Click(object sender, RoutedEventArgs e)
         {
             double parsedLayOdds;
